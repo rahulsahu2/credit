@@ -1,0 +1,29 @@
+body{
+    margin:0px;
+    padding: 0%;
+}
+#main{
+    background-color: burlywood;
+     margin-top: 10%;
+    /*margin-left: 35%;
+    margin-right: 30%;
+    padding: 30px;
+    float: left; */
+    /* flex-direction:col; */
+}
+#CardNumber , #CardType , #mybutton{
+    /* flex-flow: row;
+    height: 34px;
+    font-size: medium;
+    border : none;
+    text-decoration: none; */
+    margin-top: 10px;
+    width: 100%;
+}
+#result{
+    margin-top: 10px;
+    font-size: medium;
+}
+h1{
+    font-size:10vw;
+}

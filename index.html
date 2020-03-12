@@ -1,0 +1,46 @@
+<html>
+    <title>Credit Card Validator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="src/js/script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <body>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6">
+                <div class="jumbotron" id="main">
+                    <h1 style="font-size:4vw;">Credit&nbsp;Card&nbsp;Validator</h1>
+                    <p>&nbsp;&nbsp;Enter Details</p>
+                    <div class="col">
+                        <div class="col-xs-12">
+                            <div class="container" style="display:none;" id="myAlert">
+                                <div id="myAlert2">
+                                    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                </div>
+                            </div>
+                            <select tabindex="11" id="CardType" class="form-control" >
+                                <option value="Checking Card Type">Card Type</option>
+                                <option value="AmEx">American Express</option>
+                                <option value="DinersClub">Diners Club</option>
+                                <option value="MasterCard">MasterCard</option>
+                                <option value="Visa">Visa</option>
+                            </select> 
+                        </div>
+                        <div class="col-xs-12">
+                            <input type="text" id="CardNumber" class="form-control" onkeyup="selectCardtype()" onkeypress="return isNumber(event)" maxlength="16" placeholder="XXXX-XXXX-XXXX" autofocus/> 
+                        </div>
+                        <div class="col-xs-12">
+                            <button class="btn btn-warning" id="mybutton"  type="button" onclick="testCreditCard();" >Validate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="col-sm-3"></div>
+        </div>
+    </body>
+</html>
